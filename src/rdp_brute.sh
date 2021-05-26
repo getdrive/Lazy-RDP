@@ -1,6 +1,6 @@
 #!/bin/bash
 # NOTE: YOU ARE FREE TO COPY,MODIFY,REUSE THE SOURCE CODE FOR EDUCATIONAL PURPOSE ONLY.
-ver=1.32
+ver=1.30
 clear
 ##########################################COLOR######################################
 colorbase="\E[0m"
@@ -30,7 +30,7 @@ clear
 echo -e       "$grey                                 +--------------------------------------+" 
 echo -e       "$grey                                 |             Auto  Script             |"
 echo -e "$aquamarine                                 |     by GetDrive & hackers Union      |" 
-echo -e        "$red                                 |             Version 1.32             |"
+echo -e        "$red                                 |             Version 1.30             |"
 #echo -e        "$red                                 |$colorbase https://github.com/getdrive/Lazy-RDP$red |"
 echo -e        "$red                                 +--------------------------------------+ $colorbase"
 #####################################CHECKLANGUAGE####################################
@@ -28807,8 +28807,8 @@ done
 
 clear
 echo -e " $colorbase              +-----------------------------------------------------------------------+"   
-echo -e "               |   $grey                          1.$yellow Hydra  9.0           $colorbase                  |";
-echo -e "               |   $grey                          2.$yellow Patator0.7$colorbase                             |";
+echo -e "               |   $grey                          1.$yellow Hydra   9.3           $colorbase                 |";
+echo -e "               |   $grey                          2.$yellow Patator 0.7$colorbase                            |";
 echo -e "               +-----------------------------------------------------------------------+"
 read -p "                                          Выберите брутфорсер : " btool
 echo -e "$red-------------------------------------------------------------------------------"
@@ -28864,8 +28864,8 @@ done
 
 clear
 echo -e " $colorbase              +-----------------------------------------------------------------------+"   
-echo -e "               |   $grey                          1.$yellow Hydra  9.0           $colorbase                  |";
-echo -e "               |   $grey                          2.$yellow Patator0.7$colorbase                             |";
+echo -e "               |   $grey                          1.$yellow Hydra   9.3          $colorbase                  |";
+echo -e "               |   $grey                          2.$yellow Patator 0.7$colorbase                            |";
 echo -e "               +-----------------------------------------------------------------------+"
 read -p "                                          Выберите брутфорсер : " btool
 echo -e "$red-------------------------------------------------------------------------------"
@@ -28918,8 +28918,8 @@ done
 
 clear
 echo -e " $colorbase              +-----------------------------------------------------------------------+"   
-echo -e "               |   $grey                          1.$yellow Hydra  9.0           $colorbase                  |";
-echo -e "               |   $grey                          2.$yellow Patator0.7$colorbase                             |";
+echo -e "               |   $grey                          1.$yellow Hydra   9.3          $colorbase                  |";
+echo -e "               |   $grey                          2.$yellow Patator 0.7$colorbase                            |";
 echo -e "               +-----------------------------------------------------------------------+"
 read -p "                                          Выберите брутфорсер : " btool
 echo -e "$red-------------------------------------------------------------------------------"
@@ -28959,8 +28959,8 @@ fi
 if [ "$brutmenu" = "4" ]; then
 clear
 echo -e " $colorbase              +-----------------------------------------------------------------------+"   
-echo -e "               |   $grey                          1.$yellow Hydra  9.0           $colorbase                  |";
-echo -e "               |   $grey                          2.$yellow Patator0.7$colorbase                             |";
+echo -e "               |   $grey                          1.$yellow Hydra   9.3          $colorbase                  |";
+echo -e "               |   $grey                          2.$yellow Patator 0.7$colorbase                            |";
 echo -e "               +-----------------------------------------------------------------------+"
 read -p "                                          Выберите брутфорсер : " btool
 echo -e "$red-------------------------------------------------------------------------------"
@@ -29037,8 +29037,8 @@ done
 clear
 
 echo -e " $colorbase              +-----------------------------------------------------------------------+"   
-echo -e "               |   $grey                          1.$yellow Hydra  9.0           $colorbase                  |";
-echo -e "               |   $grey                          2.$yellow Patator0.7$colorbase                             |";
+echo -e "               |   $grey                          1.$yellow Hydra   9.3          $colorbase                  |";
+echo -e "               |   $grey                          2.$yellow Patator 0.7$colorbase                            |";
 echo -e "               +-----------------------------------------------------------------------+"
 read -p "                                          Choice bruteforce tool : " btool
 echo -e "$red-------------------------------------------------------------------------------"
@@ -29095,8 +29095,8 @@ done
 clear
 
 echo -e " $colorbase              +-----------------------------------------------------------------------+"   
-echo -e "               |   $grey                          1.$yellow Hydra  9.0           $colorbase                  |";
-echo -e "               |   $grey                          2.$yellow Patator0.7$colorbase                             |";
+echo -e "               |   $grey                          1.$yellow Hydra   9.3          $colorbase                  |";
+echo -e "               |   $grey                          2.$yellow Patator 0.7$colorbase                            |";
 echo -e "               +-----------------------------------------------------------------------+"
 read -p "                                          Choice bruteforce tool : " btool
 echo -e "$red-------------------------------------------------------------------------------"
@@ -29150,8 +29150,8 @@ done
 clear
 
 echo -e " $colorbase              +-----------------------------------------------------------------------+"   
-echo -e "               |   $grey                          1.$yellow Hydra  9.0           $colorbase                  |";
-echo -e "               |   $grey                          2.$yellow Patator0.7$colorbase                             |";
+echo -e "               |   $grey                          1.$yellow Hydra   9.3          $colorbase                  |";
+echo -e "               |   $grey                          2.$yellow Patator 0.7$colorbase                            |";
 echo -e "               +-----------------------------------------------------------------------+"
 read -p "                                          Choice bruteforce tool : " btool
 echo -e "$red-------------------------------------------------------------------------------"
@@ -29193,8 +29193,8 @@ clear
 clear
 
 echo -e " $colorbase              +-----------------------------------------------------------------------+"   
-echo -e "               |   $grey                          1.$yellow Hydra  9.0           $colorbase                  |";
-echo -e "               |   $grey                          2.$yellow Patator0.7$colorbase                             |";
+echo -e "               |   $grey                          1.$yellow Hydra   9.3          $colorbase                  |";
+echo -e "               |   $grey                          2.$yellow Patator 0.7$colorbase                            |";
 echo -e "               +-----------------------------------------------------------------------+"
 read -p "                                          Choice bruteforce tool : " btool
 echo -e "$red-------------------------------------------------------------------------------"
@@ -29243,11 +29243,11 @@ fi
 TESTRESULTRU ()
 {
 clear
-cat $PWD/Results/RUNTIME.log |grep -Eo '([0-9]{1,3}[\.]){3}[0-9]{1,3}[:]{1,2}(\S){0,30}'| sed 'n;d' > all_results
+cat $PWD/Results/RUNTIME.log |grep -Eo '([0-9]{1,3}[\.]){3}[0-9]{1,3}[:]{1,2}(\S){0,100}'| sed 'n;d' > all_results
 if [ -s all_results ]
 	then
 	#clear
-	cat all_results |grep -Eo '([0-9]{1,3}[\.]){3}[0-9]{1,3}[:]{1,2}(\S){0,30}'| sed 'n;d' >> good
+	cat all_results |grep -Eo '([0-9]{1,3}[\.]){3}[0-9]{1,3}[:]{1,2}(\S){0,100}'| sed 'n;d' >> good
 	cat all_results
 	echo ""
  echo -e "$colorbase                                       +---------------------------+"
@@ -29280,11 +29280,11 @@ fi
 TESTRESULTRU_H ()
 {
 clear
-cat $PWD/result |grep -v "# Hydra v9.0 run at"|grep -E '[DATA]|[STATUS]|host|login|password' > all_results
+cat $PWD/result |grep -v "# Hydra v9.3-dev"|grep -E '[DATA]|[STATUS]|host|login|password' > all_results
 if [ -s all_results ]
 	then
 	#clear
-	cat all_results |grep -v "# Hydra v9.0 run at"|grep -E '[DATA]|[STATUS]|host|login|password' >> good
+	cat all_results |grep -v "# Hydra v9.3-dev at"|grep -E '[DATA]|[STATUS]|host|login|password' >> good
 	cat all_results
 	echo ""
  echo -e "$colorbase                                       +---------------------------+"
@@ -29317,11 +29317,11 @@ fi
 TESTRESULTEN_H ()
 {
 clear
-cat $PWD/result |grep -v "# Hydra v9.0 run at"|grep -E '[DATA]|[STATUS]|host|login|password' > all_results
+cat $PWD/result |grep -v "# Hydra v9.3-dev"|grep -E '[DATA]|[STATUS]|host|login|password' > all_results
 if [ -s all_results ]
 	then
 	#clear
-	cat all_results |grep -v "# Hydra v9.0 run at"|grep -E '[DATA]|[STATUS]|host|login|password' >> good
+	cat all_results |grep -v "# Hydra v9.3-dev"|grep -E '[DATA]|[STATUS]|host|login|password' >> good
 	cat all_results
 	echo ""
  echo -e "$colorbase                          +-------------------------+"
@@ -29353,11 +29353,11 @@ fi
 TESTRESULTEN ()
 {
 clear
-cat $PWD/Results/RUNTIME.log |grep -Eo '([0-9]{1,3}[\.]){3}[0-9]{1,3}[:]{1,2}(\S){0,30}'| sed 'n;d' > all_results
+cat $PWD/Results/RUNTIME.log |grep -Eo '([0-9]{1,3}[\.]){3}[0-9]{1,3}[:]{1,2}(\S){0,100}'| sed 'n;d' > all_results
 if [ -s all_results ]
 	then
 	#clear
-	cat all_results |grep -Eo '([0-9]{1,3}[\.]){3}[0-9]{1,3}[:]{1,2}(\S){0,30}'| sed 'n;d' >> good
+	cat all_results |grep -Eo '([0-9]{1,3}[\.]){3}[0-9]{1,3}[:]{1,2}(\S){0,100}'| sed 'n;d' >> good
         cat all_results
  echo -e "$colorbase                          +-------------------------+"
  echo -e "$colorbase                          |$red  Login/Password found!  $colorbase|";

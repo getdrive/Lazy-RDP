@@ -1,7 +1,7 @@
 
 				  H Y D R A
 
-                      (c) 2001-2019 by van Hauser / THC
+                      (c) 2001-2021 by van Hauser / THC
              <vh@thc.org> https://github.com/vanhauser-thc/thc-hydra
        many modules were written by David (dot) Maciejak @ gmail (dot) com
                  BFG code by Jan Dlabal <dlabaljan@gmail.com>
@@ -10,6 +10,9 @@
 
            Please do not use in military or secret service organizations,
                           or for illegal purposes.
+      (This is the wish of the author and non-binding. Many people working
+       in these organizations do not care for laws and ethics anyways.
+            You are not one of the "good" ones if you ignore this.)
 
 
 
@@ -35,7 +38,7 @@ Currently this tool supports the following protocols:
  HTTP-FORM-GET, HTTP-FORM-POST, HTTP-GET, HTTP-HEAD, HTTP-POST, HTTP-PROXY,
  HTTPS-FORM-GET, HTTPS-FORM-POST, HTTPS-GET, HTTPS-HEAD, HTTPS-POST,
  HTTP-Proxy, ICQ, IMAP, IRC, LDAP, MEMCACHED, MONGODB, MS-SQL, MYSQL, NCP, NNTP, Oracle Listener,
- Oracle SID, Oracle, PC-Anywhere, PCNFS, POP3, POSTGRES, RDP, Rexec, Rlogin,
+ Oracle SID, Oracle, PC-Anywhere, PCNFS, POP3, POSTGRES, Radmin, RDP, Rexec, Rlogin,
  Rsh, RTSP, SAP/R3, SIP, SMB, SMTP, SMTP Enum, SNMP v1+v2+v3, SOCKS5,
  SSH (v1 and v2), SSHKEY, Subversion, Teamspeak (TS2), Telnet, VMware-Auth,
  VNC and XMPP.
@@ -81,7 +84,8 @@ for a few optional modules (note that some might not be available on your distri
 ```
 apt-get install libssl-dev libssh-dev libidn11-dev libpcre3-dev \
                  libgtk2.0-dev libmysqlclient-dev libpq-dev libsvn-dev \
-                 firebird-dev libmemcached-dev
+                 firebird-dev libmemcached-dev libgpg-error-dev \
+                 libgcrypt11-dev libgcrypt20-dev
 ```
 
 This enables all optional modules and features with the exception of Oracle,
@@ -149,7 +153,7 @@ THIRD - check if the module has optional parameters
  e.g. hydra -U smtp
 
 FOURTH - the destination port
- this is optional! if no port is supplied the default common port for the
+ this is optional, if no port is supplied the default common port for the
  PROTOCOL is used.
  If you specify SSL to use ("-S" option), the SSL common port is used by default.
 
@@ -166,7 +170,7 @@ All attacks are then IPv6 only!
 If you want to supply your targets via a text file, you can not use the ://
 notation but use the old style and just supply the protocol (and module options):
   hydra [some command line options] -M targets.txt ftp
-You can supply also the port for each target entry by adding ":<port>" after a
+You can also supply the port for each target entry by adding ":<port>" after a
 target entry in the file, e.g.:
 
 ```
@@ -378,7 +382,7 @@ Version 1.00 example:
         "These are very free form"
     ],
     "generator": {
-        "built": "2019-03-01 14:44:22",
+        "built": "2021-03-01 14:44:22",
         "commandline": "hydra -b jsonv1 -o results.json ... ...",
         "jsonoutputversion": "1.00",
         "server": "127.0.0.1",
