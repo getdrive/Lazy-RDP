@@ -139,7 +139,7 @@ depend=$(dpkg -s curl  | grep 'Status' | awk -F':' '/Status: / {print $2}')
 fi
 }
 ############################################################################################
-apt remove hydra -y
+rm -rf /usr/bin/hydra; apt remove hydra -y
 CHECKROOT
 CHECKDISTR
 CHECKDEPEND0
